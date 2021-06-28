@@ -1,0 +1,6 @@
+[submodule "include"]
+	path = include
+	url = https://gitee.com/heliumleobob/cpp-geometry-include.git
+[submodule "src"]
+	path = src
+	url = https://gitee.com/heliumleobob/cpp-geometry-src.git
