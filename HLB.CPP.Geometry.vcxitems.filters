@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{8702611b-5d1b-4625-94e8-d2098a1add32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\hlb">
+      <UniqueIdentifier>{98beae03-ee10-4f08-a4f0-73dd02d99000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\hlb\mathex">
+      <UniqueIdentifier>{261e5b55-f40e-454c-861f-ed9acf581dc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\hlb\mathex\geometry">
+      <UniqueIdentifier>{a9bb1065-9e67-44ff-b674-f2b2f367f79d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{9a2a0d74-8604-4b62-baea-ce54b644ad77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\hlb">
+      <UniqueIdentifier>{0c8b1beb-e0f7-4718-a7c3-6f9b93a3469a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\hlb\mathex">
+      <UniqueIdentifier>{c8f8cabe-705d-48d0-9b8d-3a869358c501}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\hlb\mathex\geometry">
+      <UniqueIdentifier>{08826d6a-9601-4604-9b59-0b170c9adecb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\hlb\mathex\geometry\contours">
+      <UniqueIdentifier>{9544d583-a2a7-4865-b682-61be83662920}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\hlb\mathex\geometry\mesh">
+      <UniqueIdentifier>{4499cd51-c90e-4f6f-a05e-ceaa52ac85db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\hlb\mathex\geometry\coordinate">
+      <UniqueIdentifier>{06d47e6c-0834-4942-8255-73ebc49b3dfe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\hlb\mathex\geometry\contours\trianglemarchingsquares.hpp">
+      <Filter>include\hlb\mathex\geometry\contours</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\hlb\mathex\geometry\mesh\grid.hpp">
+      <Filter>include\hlb\mathex\geometry\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\hlb\mathex\geometry\mesh\trianglegridwithvalue.hpp">
+      <Filter>include\hlb\mathex\geometry\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\hlb\mathex\angle.hpp">
+      <Filter>include\hlb\mathex</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\hlb\mathex\geometry\coordinate\coordinate.hpp">
+      <Filter>include\hlb\mathex\geometry\coordinate</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\hlb\mathex\geometry\coordinate\spherical.hpp">
+      <Filter>include\hlb\mathex\geometry\coordinate</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\hlb\mathex\geometry\compile.cpp">
+      <Filter>src\hlb\mathex\geometry</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
