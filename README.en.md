@@ -1,25 +1,36 @@
 # HLB.CPP.Geometry
 
-#### Description
-C++几何库.
+## Description
 A C++ lib of geometry.
 
-#### Software Architecture
-Software architecture description
+## Software Architecture
+prerequest: boost.math , boost.units
 
-#### Installation
+## Installation
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+header-only
 
-#### Instructions
+## Instructions
+Basic usage:
+```cpp
+#include <hlb/mathex/geometry/contours/trianglemarchingsquares.hpp>
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+using TMS = HLB::MathEx::Geometry::Contours::TriangleMarchingSquares<_XYLengthType, _ZLengthType>;
+// func: _ZLengthType(HLB::MathEx::Geometry::Coordinate::XY<_XYLengthType>)
+// calculate the value at (xIdx*xGridSize, yIdx*yGridSize)
+TMS contoursObj(xGridSize, yGridSize, iIdxXBeg, iIdxXEnd, iIdxYBeg, iIdxYEnd, func);
 
-#### Contribution
+//implement TMS::IContoursDrawer to get one contours curve.
+TMS::IContoursDrawer* pDrawer;
+
+contoursObj.InitLevelBuilder(oneZValueWantedToBuildContoursCurve);
+while (contoursObj.AddNextLayer()) { }
+contoursObj.FinishCurves();
+// output one curve
+contoursObj.DrawCurrentCurves(pDrawer);
+```
+
+## Contribution
 
 1.  Fork the repository
 2.  Create Feat_xxx branch
@@ -27,11 +38,7 @@ Software architecture description
 4.  Create Pull Request
 
 
-#### Gitee Feature
+## Description of lib
 
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+Main repository at [Gitee](https://gitee.com/heliumleobob/cpp-geometry.git)
+Mirror at [GitHub](https://github.com/HeliumLeoBob/HLB.CPP.Geometry.git) 
